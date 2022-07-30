@@ -1,0 +1,187 @@
+body{
+    /* COLOR */
+    background-color: #fafafa;
+    --oscuro: #1A5B6D;
+    --claro: #94CDD6;
+
+}*{
+    /*TIPOGRAFIA*/
+    font-family: sans-serif;
+}h1, h2, h3{
+    /*TIPOGRAFIA*/
+    text-align: center;
+    color: var(--claro);  
+}a{
+    /*TIPOGRAFIA*/
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--claro);
+}a:hover{
+    /*TIPOGRAFIA*/
+    color: var(--oscuro);
+
+}input, textarea{ 
+    /*FORMULARIO*/
+    font-size: 1rem;
+    color: var(--oscuro);
+    font-weight: bold;
+    margin-bottom: 8px;
+}input[type="submit"] {
+    /*FORMULARIO*/
+    color: var(--claro);
+    background-color: var(--oscuro);
+    padding: 5px 20px;
+    border: none;
+    border-radius: 4px;
+}input[type="submit"]:hover{
+    /*FORMULARIO*/
+    color: white;
+    box-shadow: 0px 2px 6px grey;
+}*{
+    /*ESTRUCTURA PEQUEÑA*/
+    box-sizing: border-box;
+}img{
+    width: 100%;
+}body{
+    margin:0;
+}.anchototal{
+    width: 100%;
+}.contenedor{
+    margin: 0px 20px;
+}nav{
+    /*ELEMENTOS*/
+    background: var(--oscuro);
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding: 5px;
+
+}#logo{
+    /*ELEMENTOS*/
+    width: 36px;
+    float: left;
+    
+}nav a{
+    /*ELEMENTOS*/
+    padding: 26px;
+}nav a:hover{
+    /*ELEMENTOS*/
+    color: white;
+}header img{
+    /*ELEMENTOS*/
+    width: 120px;
+    box-shadow: 0 2px 6px grey;
+    border-radius: 50%;
+
+}section{
+    /*ELEMENTOS*/
+    padding-top: 50px;
+
+}footer{
+    /*ELEMENTOS*/
+    background-color: var(--oscuro);
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}footer a{
+    /*ELEMENTOS*/
+    padding: 10px;
+}footer a:hover{
+    /*ELEMENTOS*/
+    color: white;
+}.S-oculto{
+    display: none;
+}
+/**********FIN TAMAÑO PEQEÑO*********/
+
+/***********HOLA TAMAÑO MEDIANO********/
+@media screen and (min-width:600px){
+    body{
+        color: #444;
+    }*{
+        font-family: "Miriam Libre", sans-serif;        
+    }h1,h2,h3,p{
+        margin-top: 0;
+    }h3{
+        font-size: 1.7rem;
+        text-align: left;
+    }h2{
+        font-size: 2.5rem;
+    }h1{
+        font-size: 3.3rem;
+    }.M-mitad{
+        /*ESTRUCTURA*/
+        float: left;
+        width: 50%;
+        padding: 10px;
+    }nav{
+        z-index: 4; 
+    }nav a{
+        font-size: 1.2rem;
+    }#logo{
+        width: 48px;
+        float: left;
+    }header{
+        position: absolute;
+        width: 100%;
+        top: 35vw;
+        text-shadow: 0 2px 6px black;
+    }.L-tercio{
+        overflow: hidden;
+    }
+/**********FIN TAMAÑO MEDIANO*********/
+
+
+/***********HOLA TAMAÑO GRANDE********/
+}
+@media screen and (min-width:1000px){
+    p{
+        font-size: 1.15rem;
+    }.M-mitad{
+        /*ESTRUCTURA*/
+        float: none;
+        width: 100%;
+        padding: 0px;
+    }.L-tercio{
+        float: left;
+        width: 33.3%;
+        padding: 20px;
+    }.L-mitad{
+        float: left;
+        width: 50%;
+        padding: 20px;
+    }.contenedor{
+        overflow: hidden;
+        width: 100%;
+        max-width: 1400px;
+        margin: auto;
+    }.izquierda{
+        float: left;
+    }.derecha{
+        float: right;
+    }nav{
+        padding: 10px;
+    }nav a{
+        font-size: 1.5rem;
+    }#logo{
+        width: 32px;
+    }.L-oculto{
+        display: none;
+    }.S-oculto{
+        display: block;
+    }.marco{
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+    }.marco iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    /****FIN TAMAÑO GRANDE*****/
+}
+
